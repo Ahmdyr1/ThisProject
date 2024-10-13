@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="styles.css">
+    <audio id="twinkleMusic" src="Twinkle Twinkle Little Star (Instrumental).mp3" preload="auto" loop></audio>
+
+
+</head>
+<body>
+
+<div class="password-box">
+    <h2>Enter Password to Unlock Your Birthday Surprise</h2>
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="checkPassword()">Submit</button>
+    <p id="errorMessage" style="display: none;"></p>
+</div>
+
+<div id="birthdayMessage" class="message-box">
+    <div class="message-container">
+        <h1 class="sparkle">Happy Birthday, Iman Kashif!</h1>
+        <p class="sparkle">Hope your day is as bright as your eyes.</p>
+        <button onclick="revealMessage()">Click for a surprise</button>
+        <p id="hiddenMessage" style="display: none;">
+            You make everything brighter! 🌸
+        </p>
+    </div>
+</div>
+
+<!-- Container for stars, hearts, and moon -->
+<div class="balloons-container"></div>
+
+<!-- Blue and Purple Hearts -->
+<div class="blue-heart-container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
