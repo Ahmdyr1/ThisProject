@@ -59,6 +59,19 @@ button:hover {
     display: none;
 }
 
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+video {
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
 .message-container {
     position: relative;
     padding: 20px;
