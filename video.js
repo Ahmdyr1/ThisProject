@@ -33,13 +33,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// JavaScript to play audio on page load
 window.addEventListener('load', function() {
     var audio = document.getElementById('Make');
-    audio.muted = false; // Unmute the audio if you want it to be audible
     audio.play().catch(function(error) {
         console.log('Audio playback failed:', error);
+        // Attempt to unmute after some user interaction
+        document.body.addEventListener('click', function() {
+            audio.muted = false; // Unmute on first click
+            audio.play();
+        }, { once: true }); // Ensure it only adds the listener once
     });
 });
+
 
 
