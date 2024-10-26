@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Page</title>
+    <link rel="stylesheet" href="video-page.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <video id="myVideo" autoplay muted loop> <!-- Use muted to allow autoplay in most browsers -->
+        <source src="Black and Gold Animated 2024 Happy New Year Instagram Post (2).mp4" type="video/mp4"> <!-- Replace with your video path -->
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+        // Select the video element
+        const video = document.getElementById('myVideo');
+        video.controls = false; // Hide controls
+
+        // Optionally, you can set the video to play automatically when the page loads
+        video.play();
+    </script>
+</body>
+</html>
