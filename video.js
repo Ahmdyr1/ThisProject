@@ -30,9 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-const MM = document.getElementById("MM");
- // Play the music
- MM.play(); // Play the audio
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
