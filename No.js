@@ -1,6 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const fallingStarsContainer = document.querySelector(".falling-stars-container")
+
+
+    // JavaScript to play audio on page load
+window.addEventListener('load', function() {
+    var audio = document.getElementById('Make');
+    audio.muted = false; // Unmute the audio if you want it to be audible
+    audio.play().catch(function(error) {
+        console.log('Audio playback failed:', error);
+    });
+});
     
     // Function to create a single star
     function createStar() {
